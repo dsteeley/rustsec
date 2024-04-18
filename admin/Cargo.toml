@@ -19,7 +19,7 @@ atom_syndication = "0.12"
 chrono = { version = "0.4", default-features = false, features = ["clock"]  }
 clap = "4"
 comrak = { version = "0.21", default-features = false }
-tame-index = { version = "0.10", features = ["git"] }
+tame-index = { version = "0.10", features = ["git", "native-tls"], default-features = false }
 # NOTE: Keep in sync with `gix` used by `tame-index`.
 gix = { version = "0.61", default-features = false, optional = true }
 rust-embed = "8.2.0"
@@ -35,4 +35,3 @@ xml-rs = "0.8"
 [dev-dependencies]
 abscissa_core = { version = "0.7", features = ["testing"] }
 once_cell = "1.5"
-
